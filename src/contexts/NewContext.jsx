@@ -1,7 +1,15 @@
+import { useState } from "react";
 import { createContext } from "react";
 
 export const NewContext = createContext();
 
 export const NewContextProvider = ({children}) => {
-    return <NewContext.Provider>{children}</NewContext.Provider>
+
+    const [newEmp, setNewEmp] = useState(0);
+
+    const handleNewEmp = () => {
+
+    };
+
+    return <NewContext.Provider value={{newEmp, handleNewEmp}}>{children}</NewContext.Provider>
 }
