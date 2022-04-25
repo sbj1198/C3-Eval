@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -41,7 +41,6 @@ export const Login = () => {
     e.preventDefault();
     // console.log("hello");
     loginStats();
-    // handleAuth()
   };
 
 
